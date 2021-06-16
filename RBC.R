@@ -237,9 +237,9 @@ ggplot(data) + geom_line(aes(x = t, y = c ), size = 0.8, color = "blue" ) +
   ggtitle("Consumption") +
   theme(plot.title = element_text(hjust = 0.5)) + theme(text = element_text(size=12) ) + 
   theme(axis.title.y = element_text(angle = 0, vjust = 0.5))
+ 
 
-
-# Standard deviation
+# Standard deviation.
 
 desv <- matrix(NA, nrow = length(data[2:length(data)]), ncol = 1)
 rownames(desv) <- c("Output", "Technology", "Capital", "Consumption" )
